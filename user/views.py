@@ -3,5 +3,5 @@ from django.http  import HttpResponse,Http404
 
 # Create your views here.
 def welcome(request):
-    return HttpResponse('Welcome to Instagram  app')
+    return render(request,'index.html')
 
