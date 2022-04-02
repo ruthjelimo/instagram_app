@@ -32,14 +32,14 @@
             <p style="font-style:oblique;"> {{post.image_caption}}</p>
       </div> 
       <div class="card-body">
-        <!-- <div>
+        <div>
           <a href=" {% url 'likes' post_id=post.id %}">
             <button class="btn btn-primary">Like</button></a>
           <p><strong class="ml-3 post_likes">{{post.added_like}} </strong>
             <strong>Likes</strong>
           </p>
         </div>
-        <div> --> 
+        <div> 
            
         </div>
         {% for comment in post.added_comments %}
