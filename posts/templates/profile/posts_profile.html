@@ -26,13 +26,13 @@
         </div>
         </a>
       </div> 
-      <!-- <div class="card-header">
+      <div class="card-header">
         <a href="{% url 'post.detail' post.id %}"  class="open-project"><img src="{{post.image.url}}" style="margin-bottom: 10px;" alt=""
             class=""></a>
             <p style="font-style:oblique;"> {{post.image_caption}}</p>
-      </div>
+      </div> 
       <div class="card-body">
-        <div>
+        <!-- <div>
           <a href=" {% url 'likes' post_id=post.id %}">
             <button class="btn btn-primary">Like</button></a>
           <p><strong class="ml-3 post_likes">{{post.added_like}} </strong>
@@ -40,7 +40,7 @@
           </p>
         </div>
         <div> --> 
-           -->
+           
         </div>
         {% for comment in post.added_comments %}
         <p class="ml-3"><span class="font-weight-bold text-primary">{{comment.user.username}}</span><br>
