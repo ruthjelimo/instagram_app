@@ -38,11 +38,11 @@ class Post(models.Model):
         self.delete()
 
     def __str__(self):
-        return "%s post" % self.post_name
+        return self.name
 
 
 class Profile(models.Model):
-  picture = CloudinaryField('image',default='v1638348565/owuk4syvculcljuzdron.jpg')
+  picture = CloudinaryField('image')
   bio = models.TextField()
   user = models.OneToOneField(User,on_delete = models.CASCADE)
 
